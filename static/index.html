@@ -16,7 +16,7 @@
 
       <!-- Menu Items -->
       <div class="hidden md:flex space-x-6">
-        <a class="hover:text-gray-400">Home</a>
+        <a class="hover:text-gray-400" hx-get="/homestuff" hx-target="#content" hx-swap="innerHTML" hx-trigger="click">Home</a>
         <a class="hover:text-gray-400" hx-get="/features" hx-target="#content" hx-swap="innerHTML" hx-trigger="click">Features</a>
         <a href="#" class="hover:text-gray-400">Docs</a>
         <a href="#" class="hover:text-gray-400">Community</a>
@@ -48,7 +48,7 @@
 
   <div id="content" class="p-6 flex-grow">
     <!-- Content loaded via htmx will be displayed here -->
-    <div hx-get="/homecontent" hx-target="#content" hx-swap="innerHTML" hx-trigger="load" placeholder="Loading..." ></div>
+    <div hx-get="/homestuff" hx-target="#content" hx-swap="innerHTML" hx-trigger="load" placeholder="Loading..." ></div>
   </div>
 
   <!-- Scripts for Mobile Menu Toggle -->
