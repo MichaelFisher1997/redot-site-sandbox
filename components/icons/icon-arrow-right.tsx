@@ -3,7 +3,7 @@ import IconBase, {
 } from '@/components/icons/icon-base/icon-base';
 import { FC } from 'react';
 
-const IconChevronDown: FC<IIconBaseProps> = (p) => (
+const IconArrowRight: FC<IIconBaseProps> = (p) => (
   <IconBase {...p}>
     <svg
       width="16"
@@ -13,7 +13,13 @@ const IconChevronDown: FC<IIconBaseProps> = (p) => (
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M12 6.5L8 10.5L4 6.5"
+        d="M14 8H2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10 4L14 8L10 12"
         stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -22,4 +28,4 @@ const IconChevronDown: FC<IIconBaseProps> = (p) => (
   </IconBase>
 );
 
-export default IconChevronDown;
+export default IconArrowRight;

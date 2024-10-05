@@ -1,7 +1,12 @@
+import Splash from '@/app/(main)/_components/splash/splash';
 import { FC } from 'react';
 
 const HomePage: FC = () => {
-  return <></>;
+  return (
+    <>
+      <Splash />
+    </>
+  );
 };
 
 export default HomePage;
