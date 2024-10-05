@@ -1,0 +1,45 @@
+.globalNavigation {
+  width: 100vw;
+  height: 56px;
+  padding: 0 20px;
+
+  backdrop-filter: blur(60px);
+  transition: color .3s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &.opaque {
+    background: rgba(#000, 90%);
+    border-bottom: 1px solid rgba(#fff, 10%);
+  }
+}
+
+.content {
+  flex-grow: 1;
+  max-width: 1280px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
+}
+
+.itemWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
