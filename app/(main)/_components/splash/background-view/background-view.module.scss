@@ -1,0 +1,39 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 10px;
+}
+
+.gameName {
+  padding: 0 10px;
+  height: 26px;
+
+  background: rgba(#000, 60%);
+  border: 1px solid rgba(#fff, 10%);
+  border-radius: 13px;
+  backdrop-filter: blur(30px);
+
+  font-size: 13px;
+  color: rgba(#fff, 40%);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  z-index: 1;
+}
